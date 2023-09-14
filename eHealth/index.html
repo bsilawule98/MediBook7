@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Sysmbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+	
+	<title>TSHWANE MEDIBOOK</title>
+</head>
+
+<body>
+<!--header Start-->
+	<header>
+		<div class="container">
+			<div class="logo">
+			<a href="">Tshwane<span>MediBook</span></a>	
+			</div>
+			<a href="javascript:void(0)" class="ham-burger">
+				<span></span>
+				<span></span>
+			</a>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="forms/forms.html">Sign-Up/Login</a></li>
+					<li><a href="#plan">Types</a></li>
+					<li><a href="medicalReport.html">Medical Report</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>	 	
+				</div>	
+		</div>		
+	</header>
+<!--header end-->
+
+<!--home Start-->
+<section class="home" id="home">
+	<div class="container">
+		<h1>Your Health Is Our Number 1 Priority</h1>
+		<p>It's more than just a system</p>
+		
+	</div>
+
+	<!--go down-->
+		<a href="#about" class="go-down">
+			<i class="fa fa-angle-down" aria-hidden="true"></i>
+		</a>
+	<!--go down-->
+</section>
+<!--home end-->
+
+<!--Start About-->
+<section class="about" id="about">
+	<div class="container">
+		<div class="content">
+			<div class="box">
+				<div class="inner">
+					<div class="img">
+						<img src="images/pxfuel.jpg" alt="about"/>
+					</div>
+					<div class="text">
+						<h4>Consultation</h4>
+						<p>Health belief model<br><br>A single Visit Consultation involves examimination of the patients medical record. and maybe</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="box">
+				<div class="inner">
+					<div class="img">
+						<img src="images/aa.jpg" alt="about"/>
+					</div>
+					<div class="text">
+						<h4>Improving the system</h4>
+						<p>Ensuring that all information is up to date and evidence based<br><br>Includes features tht allow users to track their health progress</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="box">
+				<div class="inner">
+					<div class="img">
+						<img src="images/px.jpg" alt="about"/>
+					</div>
+					<div class="text">
+						<h4>ChatBox</h4>
+						<p>Ever had question and not being able to receive answers?<br><br>Having a bot respond to your questions and request.</p> 
+					</div>
+				</div>
+				
+			</div>
+
+
+		</div>
+		
+	</div>
+	
+</section>
+<!--End About-->
+<!--Start Service-->
+	<section class="service" id="services">
+		<div class="container">
+			<div class="content">
+			<div class="text box">
+				<h2>What we do</h2>
+				<p>Our app works to improve health care services in municipal clinics 
+					by using advanced technology through the use of e-files and
+					electronic appointment bookings , Virtual queue management ( prediction).
+					</p>
+				<p>	Our app uses a colour coding system to measure the severity of 
+					consultation and urgency of health matter of user who might be 
+					trying to get assistance and depending on the severity assistance 
+					would be provided either a referral to a an online health care administrator or
+					an ambulance would be sent</p>
+				<a href="forms/forms.html" class="btn">Get Started</a>
+			</div>
+			<div class="accordian box">
+				<div class="accordian-container active">
+					<div class="head">
+						<h4>Levels</h4>	
+						<span class="fa fa-angle-down"></span>
+					</div>
+					<div class="body">
+						<p></p><!--add text-->
+					</div>
+				</div>
+					
+				<div class="accordian-container">
+					<div class="head">
+						<h4>Black Type</h4>	
+						<span class="fa fa-angle-up"></span>
+					</div>
+					<div class="body">
+						<p>Highlights emergency issues that require immediate attention.</p><!--add text-->
+					</div>
+				</div>
+
+				<div class="accordian-container">
+					<div class="head">
+						<h4>Red Type</h4>	
+						<span class="fa fa-angle-up"></span>
+					</div>
+					<div class="body">
+						<p>Highlights intermediate issues that can be neutral</p><!--add text-->
+					</div>
+				</div>
+
+				<div class="accordian-container">
+					<div class="head">
+						<h4>Green Type</h4>	
+						<span class="fa fa-angle-up"></span>
+					</div>
+					<div class="body">
+						<p>Basic issues that do not need much of attention from the Health-Care </p><!--add text-->
+					</div>
+				</div>
+
+
+			</div>
+
+			</div>
+		</div>
+		
+	</section>
+<!--End Service-->
+
+
+<!--Start chatbot-->
+<section >
+<button class="chatbot-toggle">
+	<span class="fa fa-comment"></span>
+	<span class="fa fa-times-circle"></span>
+</button>
+<div class="chatbot">
+	<header>
+		<h2>ChatBot</h2>
+		<span class="fa fa-times-circle"></span>
+	</header>
+	<ul class="chatbox">
+		<li class="chat incoming">
+			<span class="fa fa-reddit"></span>
+			<p>Hi there <br>My name is Medi<br>How can i help you?</p>
+		</li>
+		
+	</ul>
+	<div class="chat-input">
+		<textarea placeholder="Enter a message..."></textarea>
+		<span id="send-btn" class="fa fa-paper-plane"></span>
+	</div>
+</div>
+</section>
+
+<!--End chatbot-->
+
+
+<!--Start Plan-->
+<section class="plan-package" id="plan">
+	<div class="container">
+		<h2>Detailed Information</h2>
+		<p class="title-p">***</p>
+		<div class="content">
+			<div class="box">
+				<div class="inner">
+					<div class="plan-tag">
+						Option-One
+					</div>
+					<div class="img">
+						<img src="images/red.png" alt="plan">
+					</div>
+					<div class="text">
+						<h3>Type red</h3>
+						<p>Asthma</p>
+						<p>Epilepsy</p>
+						<p>TB</p>
+						<p>Pregrancy</p>
+
+
+						<a href="#book" class="btn">Make appointment</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="inner">
+					<div class="plan-tag">
+						Option-Two
+					</div>
+					<div class="img">
+						<img src="images/gr.png" alt="plan">
+					</div>
+					<div class="text">
+						<h3>Type Green</h3>
+						<p>Flu</p>
+						<p>Diarrhea</p>
+						<p>Fever</p>
+						<p>Covid</p>
+
+						<a href="#book" class="btn">Make appointment</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="inner">
+					<div class="plan-tag">
+						Option-Three
+					</div>
+					<div class="img">
+						<img src="images/bl.png" alt="plan">
+					</div>
+					<div class="text">
+						<h3>Type black</h3>
+						<p>Cancer</p>
+						<p>Shortness of Breathe</p>
+						<p>Heat-Stroke</p>
+						<p>Type 2 Diabetes</p>
+
+						<a href="#" class="btn">Emergency</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+
+
+<!--End Plan-->
+
+
+<!--start Appointment-->
+<section class="book" id="book">
+	
+		<div class="row">
+			<div class="image">
+				<img src="images/doc.jpg" alt="bk">
+			</div>
+			<form action="">
+				<h3>Book appointment</h3>
+				<input type="text" placeholder="Region" class="box" required>
+				
+				<select name="Available" class="box">
+				<option value="a">Tshwane District Hospital</option>
+				<option value="b">Folang Clinic</option>
+				<option value="c">Rooihuiskraal Municipal Clinic</option>
+					<label for="start" >FROM:</label>
+				<input type="date" id="start" class="box" >
+					<label for="end" >To:</label>
+				<input type="date" id="end" class="box">
+				
+				<a href="medicalReport.html" class="btn">Book Now</a>
+			</form>
+		</div>
+	
+</section>
+
+<!--End Appointment-->
+
+
+<!--start map-->
+<section>
+<div class="map-container">
+    <h1>Confirm Location</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114996.24894562372!2d28.029711943359377!3d-25.74965479999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95633984f200c5%3A0x1085968e4137ae48!2sFolang%20Clinic!5e0!3m2!1sen!2sza!4v1694013856719!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<form action="">
+		<input type="text"  class="box" placeholder="Confirm Pickup-Point">
+		<a href="eHealth/medicalReport.html" class="btn">Permit granted</a>
+		<a href="#contact" class="btn">Permit Denied</a>
+	</form>
+
+</div>
+
+</section>
+<!--end map-->
+
+
+
+
+
+
+<!--Start Contact-->
+<section class="contact" id="contact">
+	<div class="container">
+		<div class="content">
+			<div class="box form">
+				<form action="https://formspree.io/f/xnqlkkbq" method="POST">
+					<input type="text" placeholder="Enter Names" name="names" required>
+					<input type="text" placeholder="Enter E-mail" name="email" required>
+					<input type="text" placeholder="Enter 10 digits." name="number" pattern="[0-9]{10}" required>
+					<textarea placeholder="Enter Message"></textarea> 
+					<button type="submit">Send Message</button>
+				</form>
+			</div>
+			<div class="box text">
+				<h2>Contact Us</h2>
+				<p class="title-p">For more information you can contact us from the details provided below.<br>
+				You can also follow us on our social media platforms.</p>
+				<div class="info">
+					<ul>
+						<li><span class="fa fa-map-marker"></span> Staatsartillerie Rd, Pretoria West <br> Pretoria </li>
+						<li><span class="fa fa-phone"></span>011 568 9547</li>
+						<li><a href="mailto:LimitBreakers@gmail.com"><span class="fa fa-envelope"></span>TshwaneMedi@gmail.com</a></li>
+					</ul>
+				</div>
+				<div class="social">
+					<a href="https://facebook.com/groups/625680288597245/"><span class="fa fa-facebook"></span></a>
+					<a href=""><span class="fa fa-instagram"></span></a>
+					<a href=""><span class="fa fa-skype"></span></a>
+					<a href=""><span class="fa fa-youtube-play"></span></a>
+				</div>
+
+				<div class="copy">
+					PowerBy &copy; E-Health Geeks
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<</section>
+
+<!--End Contact-->
+
+
+<!--jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script >
+	$(document).ready(function(){
+		 $(".ham-burger, .nav ul li a").click(function(){
+
+		 	$(".nav").toggleClass("open")
+		 	$(".ham-burger").toggleClass("active");
+		 })
+		 $(".accordian-container").click(function(){
+		 	$("accordian-container").children(".body").slideUp();
+		 	$("accordian-container").removeClass("active")
+		 	$("accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+		 	$(this).children(".body").slideDown();
+		 	$(this).addClass("active")
+		 	$(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+		 })
+
+		 $(".nav ul li a, .go-down").click(function(event){
+		 	if (this.hash !== "") {
+
+		 		event.preventDefault();
+
+		 		var hash=this.hash;
+
+		 		$('html,body').animate({
+		 			scrollTop:$(hash).offset().top
+		 		 },800 , function(){
+		 		 	window.location.hash=hash;
+		 		 
+		 		});
+
+		 		//add active class in navigation
+		 		$(".nav ul li a").removeClass(".active")
+		 		$(this).addClass("active")
+		 	}
+
+
+
+		 })
+
+	})
+</script>
+
+<script src="script.js" defer></script>
+
+
+
+
+
+
+
+</body>
+</html>

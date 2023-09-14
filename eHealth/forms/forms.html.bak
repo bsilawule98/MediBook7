@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="forms.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="pics/grapes-2032838_1920.jpg">
+</head>
+<body>
+    <section class="form-section">
+        <div class="container">
+            <div class="user signinBx">
+            <div class="imgBx"><img src="images/ll.png" alt="red wine"></div>
+            <div class="formBx">
+                <form action="#" onsubmit="return validateId();" method="POST">
+                    <h2>Sign In</h2>
+                    <!-- <?php
+
+                        session_start();
+                    if(isset($_SESSION['login']) && $_SESSION['login'] !='')
+                    {
+                        echo '<center><h5 style="color: red;">'.$_SESSION['login'].'</h5></center>';
+                        unset($_SESSION['login']);
+                    }
+
+                    ?> -->
+                    <input type="text" name="id_number" id="id" placeholder="Identity Number" required>
+                    <input type="password" name="pass" placeholder="Password" required>
+                    <!-- <a href="index.html"><input type="submit" name="SignIn" placeholder="Sign In" value="Sign In"></a> -->
+                    <a href="booking.html">
+    <button class="formBtn" name="SignIn">Sign In</button>
+</a>
+
+                   
+                    <style>
+                     .imgBx{
+                        width: 100%;
+                        height: 40%;
+                        flex: 1 1 10%;
+                     }   
+                                            
+                    .form-section .container .user .formBx form .formBtn{
+                        width: 100%;
+                        height: 35px;
+                        outline: none;
+                        border: none;
+                        background: #677eff;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        transition: 0.5s;
+                    }
+                    </style>
+                    <p class="signup">Don't Have An Account ? <a href="#" onclick="toggleForm();">Sign Up</a></p>
+                </form>
+            </div>
+            </div>
+            
+            <div class="user signupBx">
+            <div class="formBx">
+                <form action="#" method="POST">
+                    <h2>Create an account</h2>
+                    <!-- <?php
+
+                    if(isset($_SESSION['register']) && $_SESSION['register'] !='')
+                    {
+                        echo '<center><h5 style="color: red;" >'.$_SESSION['register'].'</h5></center>';
+                        unset($_SESSION['register']);
+                    }
+
+                    ?> -->
+
+                    <input type="text" name="id_number" placeholder="Identity Number" maxlength = "13"required>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="surname" placeholder="Surname" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="mobile" name="mobile" placeholder="Contact Number" maxlength="10" required>
+                    <input type="text" name="placeOfBirth" placeholder="Place Of Birth" required>
+                    <input type="textarea" name="address" placeholder="Address" required>
+                    <div class="gender" id="gender" required>
+                    <p><input type="radio" name = "gender" value="male" id="male" placeholder="Male"> Male</p> 
+                    <p><input type="radio" name = "gender" value="female" id="female" placeholder="Female"> Female</p>
+                 
+                    </div>
+                                       
+                    
+                    <input type="password" name="pass" placeholder="Password" required>
+                    <input type="submit" name="SignUp" placeholder="Sign Up">
+                    <p class="signup">Already Have An Account ? <a href="#" onclick="toggleForm();">Sign In</a></p>
+                    
+                </form>
+            </div>
+            <div class="imgBx"><img src="images/ll.png" alt="red wine"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleForm(){
+            var container = document.querySelector('.container');
+                container.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
